@@ -1,0 +1,56 @@
+.mail {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  flex-direction: column;
+  background-color: var(--blue);
+  gap: 10px;
+  color: white;
+}
+
+.mailHeading {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  justify-content: center;
+  align-items: center;
+}
+
+.mailHeading h1 {
+  font-size: 20px;
+}
+
+.mailHeading h3 {
+  font-size: 15px;
+  font-weight: 500;
+}
+.mailInput input {
+  width: 300px;
+  height: 40px;
+  outline: none;
+  padding: 0px 5px;
+  font-weight: bold;
+}
+
+.mailInput button {
+  height: 40px;
+  padding: 0px 10px;
+  background-color: blue;
+  border: none;
+  color: white;
+}
+
+.checkBox {
+  display: flex;
+  /* gap: 5/px; */
+  /* background-color: red; */
+  width: 28%;
+  justify-content: space-around;
+}
+
+.checkBox p{
+    font-size: 15px;
+    font-weight: 100;
+}
