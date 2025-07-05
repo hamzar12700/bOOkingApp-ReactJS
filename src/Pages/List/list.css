@@ -1,60 +1,123 @@
-.listContainer{
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
+.listContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  /* background-color: green; */
 }
 
-.listWrapper{
-    width: 100%;
-    max-width: 85%;
-    display: flex;
-    gap: 20px;
+.list{
+    /* background-color: red; */
 }
 
-.listSearch{
-    flex: 1;
-    background-color: #febb02;
-    padding: 10px;
-    border-radius: 10px;
-    position: sticky;
-    top: 10px;
+.listWrapper {
+  width: 100%;
+  max-width: 85%;
+  display: flex;
+  gap: 20px;
 }
 
-.isTitle{
-    font-size: 14px;
-    color: #555;
-    margin-bottom: 10px;
+.listSearch {
+  flex: 1;
+  background-color: #febb02;
+  padding: 10px;
+  border-radius: 10px;
+  position: sticky;
+  top: 10px;
+  height: max-content;
 }
 
-.listResult{
-    flex: 3;  
+.isTitle {
+  font-size: 20px;
+  color: #555;
+  margin-bottom: 10px;
 }
 
-.listResult{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-bottom: 5px;
+.listResult {
+  flex: 3;
 }
 
-.listResult label{
-    font-size: 12px;
-
+.lsItem {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 10px;
 }
 
-.listResult input{
-    height: 30px;
-    border: none;
-    padding: 5px;
-background-color: white;
-display: flex;
-align-items: center;
-cursor: pointer;
+.lsItem label {
+  font-size: 12px;
 }
 
-.listResult span{
-    height: 30px;
-    border: none;
-    padding: 5px;
+.lsItem input {
+  height: 30px;
+  border: none;
+  padding: 5px;
+}
 
+.lsItem span {
+  height: 30px;
+  padding: 5px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.listResult {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.listResult label {
+  font-size: 12px;
+}
+
+.listResult input {
+  height: 30px;
+  border: none;
+  padding: 5px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.listResult span {
+  height: 30px;
+  border: none;
+  padding: 5px;
+}
+
+.lsOptionItem{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  color: #555;
+  font-size: 12px;
+}
+
+.lsOptionInput{
+  width: 50px;
+}
+
+.lsOptionText{
+  display: inline-block;
+  width: 150px;
+  background-color: transparent;
+}
+
+.lsOption{
+  padding: 10px;
+}
+
+
+.lsOption button{
+  padding: 10px;
+  background-color: #0071c2;
+  color: white;
+  border: none;
+  width: 100%;
+  font-weight: 500;
+  cursor: pointer;
 }

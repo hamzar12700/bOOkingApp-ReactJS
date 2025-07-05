@@ -7,7 +7,7 @@ import { DateRange } from "react-date-range";
 import { useState } from "react";
 import "react-date-range/dist/styles.css";
 import "react-date-range/dist/theme/default.css";
-import { format } from "date-fns";
+import { format } from "date-fns"; 
 import { useNavigate } from "react-router-dom";
 
 const Headers = ({type}) => {
@@ -89,7 +89,7 @@ navigate('/hotel' , {state:{destination , date , options}})
             <div className="headerSearchItem">
               <FaBed className="headerIcon" />
               <input
-              onChange={(e)=>setDestination(e.target.value)}
+              onChange={e=>setDestination(e.target.value)}
                 type="text"
                 placeholder="where are you going"
                 className="headerSearchInput"
@@ -111,6 +111,7 @@ navigate('/hotel' , {state:{destination , date , options}})
               </div>
               {openDate && (
                 <DateRange
+                minDate={new Date()}
                   editableDateInputs={true}
                   onChange={(item) => setDate([item.selection])}
                   moveRangeOnFirstSelection={false}
